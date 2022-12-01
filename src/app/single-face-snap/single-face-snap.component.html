@@ -1,0 +1,14 @@
+
+<div class="face-snap-card " [ngClass]="{snapped : clickLike === 'Unlike'}">
+  <button routerLink="/facesnaps">Back</button>
+  <h2>{{ faceSnap.title | uppercase}}</h2>
+  <p>Mis en ligne le : {{ faceSnap.creatDate | date  }}</p>
+  <p *ngIf="faceSnap.localisation">Photo : {{faceSnap.localisation}}</p>
+  <img [src]="faceSnap.photo" [alt]="faceSnap.title">
+  <p>{{ faceSnap.description }}</p>
+  <p>
+    <button (click)="onClixkLike()"  >{{clickLike}}</button>
+    <span [ngStyle]="{ color : 'rgb('+faceSnap.snaps+',0,0)'}">❤ {{ faceSnap.snaps }}</span>
+  </p>
+</div>
+

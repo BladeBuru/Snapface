@@ -1,0 +1,37 @@
+
+.landing-page-card{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+
+  border-radius: 30px;
+  box-shadow: lightgray  10px 10px 10px;
+
+}
+button {
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 10px;
+  padding:  20px 30px;
+  box-shadow: lightgray 5px 5px 15px;
+  margin: 5em;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  color: #5b5959;
+  font-weight: 500;
+  &:hover {
+    background-color: rgba(223, 223, 224, 0.14);
+  }
+  &:active {
+    transform: translate(3px, 3px);
+    box-shadow: lightgray 0 0 5px;
+  }
+}
+
+.landing-page-blockblock{
+  padding: 10px;
+
+}

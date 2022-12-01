@@ -1,0 +1,6 @@
+
+<div class="face-snap-card " (click)="OnFaceSnap()" [ngClass]="{snapped : clickLike === 'Unlike'}">
+  <h2>{{ faceSnap.title | uppercase}}</h2>
+  <p>Mis en ligne le : {{ faceSnap.creatDate | date  }}</p>
+</div>
+
